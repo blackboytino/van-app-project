@@ -3,6 +3,38 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Dashboard(){
+
+    const[vanList ,setVanList] = React.useState([])
+
+    React.useEffect(() => {
+        fetch("/api/vans")
+            .then(res => res.json())
+            .then(data => setVanList(data.vans))
+    }, [])
+
+    const vansData = vanList.map(van => { 
+        return (
+            <>
+           <div id="vanlistdiv">
+
+<div id="vanlistdivimg">
+   <img src = {van.imageUrl} alt=""/>
+</div>
+
+
+<div id="vanlistmetadata">
+<h3>{van.name}</h3> 
+<p>${van.price}/day</p>
+</div>
+
+<div id="editvanlist">
+   <p>Edit</p>
+</div>
+           </div>
+            </>
+        )
+    })
+
     return(
         <>
    
@@ -45,6 +77,7 @@ export default function Dashboard(){
 <div id="dashboardlistedvans">
     <h3>Your listed Vans <a href="j">View all</a> </h3>
    
+   {vansData}
    
    
 </div>

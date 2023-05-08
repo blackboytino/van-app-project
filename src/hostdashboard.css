@@ -91,13 +91,17 @@
 }
 
 #dashboardlistedvans {
-    padding-left: 4%;
     font-size: 20px;
-    padding-top: 1%;
+    padding-top: 2%;
+    height: 300%;
+    width: 100%;
+    background-color: #FFEAD0
 }
 
-#dashboardlistedvans h2 {
+#dashboardlistedvans h3 {
+    margin-left: 4%;
     font-weight: bold;
+    margin-bottom: 5%;
 }
 
 #dashboardlistedvans a {
@@ -106,4 +110,44 @@
     font-size: 18px;
     color: black;
     font-weight: lighter;
+}
+
+#vanlistdiv {
+    background-color: white;
+    height: 8.4%;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 4%;
+    display: flex;
+}
+
+#vanlistdivimg {
+    width: 8%;
+    height: 55%;
+    margin: 3%;
+}
+
+#vanlistdivimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#vanlistmetadata {
+    height: 50%;
+    width: 30%;
+    margin-top: 3%;
+}
+
+#vanlistmetadata p {
+    margin-left: 4%;
+}
+
+#editvanlist {
+    margin: auto;
+    margin-right: 5%;
+    text-align: right;
+    height: 50%;
+    width: 20%;
 }
