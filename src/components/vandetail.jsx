@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Vans from "./vans";
+
 import { useParams } from "react-router-dom";
 
 
