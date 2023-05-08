@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import About from "./components/about";
 import Home from "./components/home";
-import Navbar from "./components/navbar";
+
 import Vans from "./components/vans";
 import VanDetail from "./components/vandetail";
 import Layout from "./components/Layout";
