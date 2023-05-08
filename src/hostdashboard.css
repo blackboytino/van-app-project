@@ -1,0 +1,109 @@
+#hostpage {
+    position: absolute;
+    top: 111.62;
+    background-color: #FFF7ED;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Arial";
+    display: block;
+}
+
+#hostpagelinks {
+    height: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.hostroutelinks {
+    font-family: "Arial";
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 4%;
+    margin-right: 60px;
+    color: black;
+}
+
+#hostroutelink-dashboard {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#dashboardfirstdiv {
+    height: 28%;
+    width: 100%;
+    background-color: #FFEAD0;
+    padding-left: 4%;
+}
+
+#dashboardfirstdiv h2 {
+    font-size: 40px;
+    padding-top: 1%;
+}
+
+.income-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.details-label {
+    position: absolute;
+    right: 8%;
+    font-size: 18px;
+}
+
+#dashboardfirstdiv h4 {
+    font-size: 22px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+#dashboardfirstdivspan {
+    display: inline-block;
+    text-align: right;
+    font-weight: normal;
+}
+
+#dashboardfirstdiv h1 {
+    font-size: 50px;
+}
+
+#dashboardscoreddiv {
+    width: 100%;
+    height: 20%;
+    background-color: #FFDDB2;
+    padding-left: 4%;
+    line-height: 150px;
+}
+
+#dashboardscoreddiv i {
+    padding-left: 3%;
+    color: #FF8C38;
+    padding-right: 1%;
+}
+
+.reviewscore-details {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#dashboardlistedvans {
+    padding-left: 4%;
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+#dashboardlistedvans h2 {
+    font-weight: bold;
+}
+
+#dashboardlistedvans a {
+    position: absolute;
+    right: 8%;
+    font-size: 18px;
+    color: black;
+    font-weight: lighter;
+}

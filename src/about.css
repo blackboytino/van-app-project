@@ -1,0 +1,98 @@
+    #aboutpage {
+        position: absolute;
+        top: 111.62px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter';
+    }
+    
+    #aboutimage {
+        left: 0;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 2%;
+    }
+    
+    #aboutImg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #aboutpagecontent {
+        margin-left: 2%;
+    }
+    
+    #abouthead {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    #aboutp {
+        font-size: 20px;
+    }
+    
+    #downside-about {
+        width: 90%;
+        height: 40%;
+        border-radius: 10px;
+        margin: auto;
+        background-color: #FFCC8D;
+        margin-top: 8%;
+    }
+    
+    #downside-about-head {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+    
+    #explore-van-link-div {
+        width: 25%;
+        height: 20%;
+        border: none;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        margin-top: 3%;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        line-height: 55px;
+    }
+    
+    #explore-van-link-div:hover {
+        animation-name: about-darken;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes about-darken {
+        from {
+            background-color: black;
+        }
+        to {
+            background-color: grey;
+        }
+    }
+    
+    #explore-van-link {
+        text-decoration: none;
+    }
+    
+    #aboutpagefooter {
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Inter';
+        color: #AAAAAA;
+        height: 18%;
+        background-color: #252525;
+        line-height: 165px;
+        margin-top: 5%;
+    }

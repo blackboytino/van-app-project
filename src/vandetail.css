@@ -1,0 +1,146 @@
+#vandetailpage {
+    position: absolute;
+    top: 111.62px;
+    background-color: #FFF7ED;
+    width: 100%;
+    padding-top: 5%;
+    font-family: Inter;
+    left: 0;
+}
+
+#vandetailpage i {
+    color: black;
+}
+
+.back-to-van-link {
+    margin-left: 3%;
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+#back-to-van-link {
+    color: black;
+    text-decoration: underline;
+}
+
+#vandetailpage p {
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+#vandetaildiv {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+#vandetailimage {
+    width: 100%;
+    margin-bottom: 6%;
+    border-radius: 10px;
+}
+
+#vandetaildiv h1 {
+    font-size: 40px;
+}
+
+#vandetaildiv h2 {
+    font-size: 23px;
+}
+
+#vandetaildiv h2 b {
+    font-size: 25px;
+}
+
+#vandetaildiv p {
+    font-size: 20px;
+}
+
+#vandetailbutton {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #FF8C38;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+#vandetailbutton:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-name: vandetail-darken;
+}
+
+@keyframes vandetail-darken {
+    from {
+        background-color: #FF8C38;
+    }
+    to {
+        background-color: #e35f00;
+    }
+}
+
+#vandetailbuttondiv {
+    width: 85%;
+    height: 10%;
+    margin: auto;
+}
+
+#vandetailsfooter {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Inter';
+    color: #AAAAAA;
+    height: 18%;
+    background-color: #252525;
+    line-height: 165px;
+}
+
+#vandetailluxury {
+    border-radius: 5px;
+    width: 30%;
+    height: 7%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #161616;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#vandetailrugged {
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+    height: 7%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #115E59;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#vandetailsimple {
+    border-radius: 5px;
+    width: 30%;
+    height: 7%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #E17654;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}

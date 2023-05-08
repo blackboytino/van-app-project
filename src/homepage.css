@@ -1,0 +1,123 @@
+    #navbar {
+        width: 100%;
+        height: 111.62px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #FFF7ED;
+    }
+    
+    .routelinks {
+        text-decoration: none;
+        line-height: 111px;
+        padding-left: 30px;
+        margin-right: 60px;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #homelink {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        color: black;
+    }
+    
+    #link-right {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        float: right;
+    }
+    
+    .routelinks:hover {
+        text-decoration: underline;
+    }
+    
+    #homepage {
+        position: absolute;
+        top: 111.62px;
+        left: 0px;
+        width: 100%;
+        height: 70%;
+        font-family: 'Karla';
+        background-image: url(./images/image\ 53.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #homepagecontent {
+        width: 75%;
+        color: white;
+        margin: auto;
+    }
+    
+    #homepageh1 {
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 8%
+    }
+    
+    #homepageh3 {
+        font-weight: normal;
+        font-size: 24px;
+        margin-top: 5%;
+    }
+    
+    .homepagebtn {
+        border: none;
+        display: flex;
+        justify-content: center;
+        height: 30%;
+        width: 80%;
+        height: 80px;
+        background-color: #FF8C38;
+        font-family: 'Karla';
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 5%;
+        text-align: center;
+        line-height: 80px;
+        text-decoration: none;
+        margin: auto;
+        color: white;
+    }
+    
+    .homepagebtn:hover {
+        animation-name: home-darken;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes home-darken {
+        from {
+            background-color: #FF8C38;
+        }
+        to {
+            background-color: #e35f00;
+        }
+        /* slightly darker shade of orange */
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    #homepagefooter {
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Inter';
+        color: #AAAAAA;
+        height: 18%;
+        background-color: #252525;
+        line-height: 165px;
+        margin-top: 5%;
+        position: fixed;
+    }
