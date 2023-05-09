@@ -96,9 +96,9 @@
 #dashboardlistedvans {
     font-size: 20px;
     padding-top: 2%;
-    height: 300%;
+    height: 250%;
     width: 100%;
-    background-color: #FFEAD0
+    background-color: #FFF7ED
 }
 
 #dashboardlistedvans h3 {
@@ -153,4 +153,20 @@
     text-align: right;
     height: 50%;
     width: 20%;
+}
+
+#hostvansdiv {
+    position: absolute;
+}
+
+#reviewheader {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 18px;
+}
+
+#reviewheader p {
+    line-height: 350%;
+    margin-left: 4%;
 }

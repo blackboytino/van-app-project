@@ -1,6 +1,21 @@
 import React from "react";
 
-export default function Reviews(){
+export default function Reviews(){ 
+    return(
     <>
-    <h1>hi</h1></>
+    <div>
+
+    <div id="reviewheader">
+    <h1> Your reviews</h1> <p>last 30 days</p>  
+    </div>
+
+    
+
+
+
+
+
+    </div>
+    </>
+)
 }

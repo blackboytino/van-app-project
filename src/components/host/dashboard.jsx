@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
 
-export default function Dashboard(){
+
+export default function Dashboard() {
 
     const[vanList ,setVanList] = React.useState([])
 
@@ -12,8 +12,7 @@ export default function Dashboard(){
             .then(data => setVanList(data.vans))
     }, [])
 
-    const vansData = vanList.map(van => { 
-        return (
+     const vansData = vanList.map(van => {  return (
             <>
            <div id="vanlistdiv">
 
@@ -35,20 +34,17 @@ export default function Dashboard(){
         )
     })
 
-    return(
-        <>
-   
-        <div id="hostpage">
+
+    return (
+         <>
+
+       
 
 
-        <div id="hostpagelinks" >
-        <Link to="/host" className="hostroutelinks" id="hostroutelink-dashboard">Dashboard</Link>
-        <Link to="/host/income" className="hostroutelinks" >Income</Link>
-        <Link to="/vans" className="hostroutelinks" >Vans</Link>
-        <Link to="/host/reviews" className="hostroutelinks" >Reviews</Link>
-        </div>
+       
 
-<div id="dashboardfirstdiv">
+        
+        <div id="dashboardfirstdiv">
     <h2>Welcome!</h2>
 
     <div class="income-details">
@@ -84,8 +80,8 @@ export default function Dashboard(){
 
 
 
-
-        </div>
+        
+        
         </>
     )
 }

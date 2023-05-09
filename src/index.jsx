@@ -5,7 +5,7 @@ import './homepage.css'
 import './about.css'
 import './vans.css'
 import './vandetail.css'
-import './hostdashboard.css'
+import './host.css'
 
 
 

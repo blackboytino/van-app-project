@@ -8,9 +8,12 @@ import Vans from "./components/vans";
 import VanDetail from "./components/vandetail";
 import Layout from "./components/Layout";
 
-import Dashboard from "./components/host/hostdashboard";
+import Dashboard from "./components/host/dashboard";
 import Income from "./components/host/income";
 import Reviews from "./components/host/reviews";
+
+import Hostlayout from "./components/host/hostlayout";
+import Hostvans from "./components/host/hostvans";
 
 
 
@@ -24,11 +27,11 @@ export default function App() {
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
 
-
-          <Route path="/host" element={<Dashboard />}>
+          <Route path="/host" element={<Hostlayout />}>
+          <Route path="/host" element={<Dashboard />}/>
           <Route path="/host/income" element={<Income />} />
+          <Route path="/host/vans" element={<Hostvans />} />
           <Route path="/host/reviews" element={<Reviews/>} />
-
           </Route>
 
         
