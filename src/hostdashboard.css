@@ -33,13 +33,13 @@
     height: 28%;
     width: 100%;
     background-color: #FFEAD0;
-    padding-left: 4%;
     padding-bottom: 1%;
 }
 
 #dashboardfirstdiv h2 {
     font-size: 40px;
     padding-top: 1%;
+    margin-left: 4%;
 }
 
 .income-details {
@@ -48,6 +48,7 @@
     align-items: center;
     font-size: 18px;
     margin-top: 1%;
+    margin-left: 4%;
 }
 
 .details-label {
@@ -56,10 +57,11 @@
     font-size: 18px;
 }
 
-#dashboardfirstdiv h4 {
+#dashboardfirstdiv h1 {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: justify;
+    margin-left: 3.8%;
 }
 
 #dashboardfirstdivspan {
@@ -76,7 +78,6 @@
     width: 100%;
     height: 20%;
     background-color: #FFDDB2;
-    padding-left: 4%;
     line-height: 150px;
 }
 
@@ -87,6 +88,7 @@
 }
 
 .reviewscore-details {
+    margin-left: 4%;
     font-size: 30px;
     font-weight: bold;
 }
