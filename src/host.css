@@ -15,15 +15,28 @@
 }
 
 .hostroutelinks {
+    font-weight: normal;
+    color: black;
     font-family: "Arial";
     font-size: 20px;
     text-decoration: none;
     padding-left: 4%;
     margin-right: 60px;
-    color: black;
 }
 
-#hostroutelink-dashboard {
+.hostroutelinks:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hostroutelink-active {
+    font-weight: normal;
+    color: black;
+    font-family: "Arial";
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 4%;
+    margin-right: 60px;
     font-weight: bold;
     text-decoration: underline;
 }

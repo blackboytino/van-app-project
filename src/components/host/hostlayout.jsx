@@ -1,8 +1,9 @@
 import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 
 export default function Hostlayout() {
+  
     return (
         <>
         
@@ -11,13 +12,13 @@ export default function Hostlayout() {
 
 
 <div id = "hostpagelinks">
-<Link to = "/host" className = "hostroutelinks" id = "hostroutelink-dashboard"> Dashboard </Link> 
+<NavLink to = "/host" end className = {({isActive}) => isActive ? "hostroutelink-active" : "hostroutelinks"} > Dashboard </NavLink> 
 
-<Link to = "/host/income" className = "hostroutelinks" > Income </Link>
+<NavLink to = "/host/income" className =  {({isActive}) => isActive ? "hostroutelink-active" : "hostroutelinks"} > Income </NavLink>
 
- <Link to = "/host/vans" className = "hostroutelinks" > Vans </Link>
+ <NavLink to = "/host/vans"  className =  {({isActive}) => isActive ? "hostroutelink-active" : "hostroutelinks"}  > Vans </NavLink>
  
- <Link to = "/host/reviews" className = "hostroutelinks" > Reviews </Link>
+ <NavLink to = "/host/reviews" className =  {({isActive}) => isActive ? "hostroutelink-active" : "hostroutelinks"} > Reviews </NavLink>
 
 </div>
 <Outlet/>
