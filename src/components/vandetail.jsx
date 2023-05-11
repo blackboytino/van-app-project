@@ -37,10 +37,6 @@ export default function VanDetail(){
             
 
 
-           <div id="vandetailsfooter"> 
-         Ⓒ 2022 #VANLIFE
-          </div>
-
           
        
             </div>

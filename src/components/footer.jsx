@@ -3,8 +3,9 @@ import React from "react";
 
 export default function Footer(){
     return(
-        <div id="homepagefooter"> 
+        <footer id="appfooter"> 
+        
          Ⓒ 2022 #VANLIFE
-          </div>
+          </footer>
     )
 }

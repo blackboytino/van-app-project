@@ -5,7 +5,7 @@ import Navbar from "../navbar"
 export default function Hostlayout() {
     return (
         <>
-            <Navbar />
+        
 
         <div id="hostpage">
 

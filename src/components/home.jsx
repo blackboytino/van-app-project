@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./footer"
+
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ export default function Home(){
 
           
           
-        <Footer/>
+      
         </div>
          </>
     )

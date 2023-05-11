@@ -1,6 +1,5 @@
     #aboutpage {
         position: absolute;
-        top: 111.62px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -93,6 +92,6 @@
         color: #AAAAAA;
         height: 18%;
         background-color: #252525;
-        line-height: 165px;
+        line-height: 130px;
         margin-top: 5%;
     }

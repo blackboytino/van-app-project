@@ -36,9 +36,7 @@ export default function About(){
 
          </div>
 
-         <div id="aboutpagefooter"> 
-         Ⓒ 2022 #VANLIFE
-          </div>
+         
 
          </div>
        

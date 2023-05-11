@@ -1,6 +1,5 @@
 #hostpage {
     position: absolute;
-    top: 111.62;
     background-color: #FFF7ED;
     left: 0;
     width: 100%;
@@ -96,7 +95,7 @@
 #dashboardlistedvans {
     font-size: 20px;
     padding-top: 2%;
-    height: 250%;
+    height: 290%;
     width: 100%;
     background-color: #FFF7ED
 }
