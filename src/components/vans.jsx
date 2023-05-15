@@ -4,23 +4,25 @@ import { Link } from "react-router-dom";
 
 
 
-const baseUrl = process.env.NODE_ENV === "development" ? "" : "https://tino-vanlife-project.netlify.app";
 
 
 
 export default function Vans(){
     
 
-    const [vans, setVans] = React.useState([]);
+    const[vans ,setVans] = React.useState([])
+
 
     React.useEffect(() => {
-      fetch(`${baseUrl}/api/vans`) // Use the baseUrl variable
-        .then((res) => res.json())
-        .then((data) => setVans(data.vans))
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-        });
-    }, []);
+        fetch("https://tino-vanlife-project.netlify.app/api/vans")
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
+    }, [])
+
+
+
+  
+
     
 
 

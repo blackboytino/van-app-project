@@ -10,7 +10,7 @@ export default function HostVanDetail() {
     const [currentVan, setCurrentVan] = React.useState(null)
 
     React.useEffect( () => {
-         fetch(`/api/vans/${params.id}`)
+         fetch(`https://tino-vanlife-project.netlify.app/api/vans/${params.id}`)
          .then(res => res.json())
          .then(data => setCurrentVan(data.vans))
     },[params.id])
