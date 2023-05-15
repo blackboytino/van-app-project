@@ -9,12 +9,13 @@ import { Link } from "react-router-dom";
 
 export default function Vans(){
     
+    const baseUrl = "https://tino-vanlife-project.netlify.app/api";
 
     const[vans ,setVans] = React.useState([])
 
 
     React.useEffect(() => {
-        fetch("/api/vans")
+        fetch(`${baseUrl}api/vans`)
             .then(res => res.json())
             .then(data => setVans(data.vans))
     }, [])
