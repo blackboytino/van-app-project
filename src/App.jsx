@@ -15,13 +15,23 @@ import Reviews from "./components/host/reviews";
 import Hostlayout from "./components/host/hostlayout";
 import Hostvans from "./components/host/hostvans";
 
+import Pricing from "./components/host/pricing";
+import Photos from "./components/host/photos";
+import HostVanDetail from "./components/host/hostvandetail";
+import Hostvaninfo from "./components/host/hostvaninfo";
+
+
+
 
 
 export default function App() {
     return (
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+
+
+<Route path="/" element={<Layout />}>
+
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
@@ -31,13 +41,24 @@ export default function App() {
        <Route path="host" element={<Hostlayout />}>
           <Route index element={<Dashboard />}/>
           <Route path="income" element={<Income />} />
+          <Route path="reviews" element={<Reviews />} />
+          
           <Route path="vans" element={<Hostvans />} />
+
+
+          <Route path="vans/:id" element={<HostVanDetail />} >
+          <Route index  element={<Hostvaninfo />} />
+          <Route path="pricing" element={< Pricing/>}/>
+          <Route path="photos" element={< Photos />}/>
+          </Route>
+
+
           <Route path="reviews" element={<Reviews/>} />
       </Route>
 
       </Route>
       
-      </Routes>
+</Routes>
      </BrowserRouter>
     )
   }

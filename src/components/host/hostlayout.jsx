@@ -10,7 +10,6 @@ export default function Hostlayout() {
 
         <div id="hostpage">
 
-
 <div id = "hostpagelinks">
 <NavLink to = "/host" end className = {({isActive}) => isActive ? "hostroutelink-active" : "hostroutelinks"} > Dashboard </NavLink> 
 

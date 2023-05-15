@@ -7,7 +7,7 @@ export default function Dashboard() {
     const[vanList ,setVanList] = React.useState([])
 
     React.useEffect(() => {
-        fetch("/api/vans")
+        fetch("/api/host/vans")
             .then(res => res.json())
             .then(data => setVanList(data.vans))
     }, [])

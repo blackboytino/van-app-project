@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Hostvans(){
@@ -6,18 +7,22 @@ export default function Hostvans(){
     const[vanList ,setVanList] = React.useState([])
 
     React.useEffect(() => {
-        fetch("/api/vans")
+        fetch("/api/host/vans")
             .then(res => res.json())
             .then(data => setVanList(data.vans))
     }, [])
 
      const vansData = vanList.map(van => {  return (
             <>
-           <div id="vanlistdiv">
 
-<div id="vanlistdivimg">
-   <img src = {van.imageUrl} alt=""/>
-</div>
+           <div id="vanlistdiv" key={van.id}>
+
+          
+                
+
+        <div id="vanlistdivimg">
+        <img src = {van.imageUrl} alt=""/>
+        </div>
 
 
 <div id="vanlistmetadata">
@@ -26,9 +31,20 @@ export default function Hostvans(){
 </div>
 
 <div id="editvanlist">
-   <p>Edit</p>
+<Link
+            to={`/host/vans/${van.id}`}
+            key={van.id}
+            id="editvanlist"
+            >
+   <p>View</p>
+   </Link>
+
+
 </div>
+
+
            </div>
+          
             </>
         )
     })
