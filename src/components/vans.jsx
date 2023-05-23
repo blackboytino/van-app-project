@@ -63,9 +63,9 @@ export default function Vans(){
         <h1 id="vanspagehead">Explore our van options</h1>
 
         <div id="vanscategorydiv">
-        <NavLink to="?type=simple" className = "vanscategorybtn" id="vanscategorybtn-simple"> Simple </NavLink>
-        <NavLink to="?type=luxury" className = "vanscategorybtn" id="vanscategorybtn-luxury"> Luxury </NavLink>
-        <NavLink to="?type=rugged" className = "vanscategorybtn" id="vanscategorybtn-rugged"> Rugged </NavLink> 
+        <button  onClick={() => setVanFilter("type=simple")} className = "vanscategorybtn" id="vanscategorybtn-simple"> Simple </button>
+        <button onClick={() => setVanFilter("type=luxury")} className = "vanscategorybtn" id="vanscategorybtn-luxury"> Luxury </button>
+        <button onClick={() => setVanFilter("type=rugged")} className = "vanscategorybtn" id="vanscategorybtn-rugged"> Rugged </button> 
         <NavLink to="/vans" className="vanscategorybtn" id="clearfilterbtn">Clear filters </NavLink>
         </div>
 
