@@ -18,31 +18,69 @@
             width: 100%;
             height: 6%;
             margin-bottom: 3%;
-            margin-left: 3%
+            margin-left: 3%;
         }
         
         .vanscategorybtn {
             width: 20%;
-            height: 100%;
+            color: black;
             border: none;
             margin-right: 5%;
             border-radius: 5px;
             background-color: #FFEAD0;
             font-size: 18px;
+            text-align: center;
+            line-height: 52px;
         }
         
-        .vanscategorybtn:hover {
-            animation-name: vans-darken;
+        #vanscategorybtn-simple:hover {
+            animation-name: vans-darken-simple;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
         }
         
-        @keyframes vans-darken {
+        #vanscategorybtn-luxury:hover {
+            animation-name: vans-darken-luxury;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        #vanscategorybtn-rugged:hover {
+            animation-name: vans-darken-rugged;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes vans-darken-simple {
             from {
                 background-color: #FFEAD0;
+                color: black;
             }
             to {
-                background-color: #ffc782;
+                background-color: #E17654;
+                color: white;
+            }
+        }
+        
+        @keyframes vans-darken-luxury {
+            from {
+                background-color: #FFEAD0;
+                color: black;
+            }
+            to {
+                background-color: #161616;
+                color: white;
+            }
+        }
+        
+        @keyframes vans-darken-rugged {
+            from {
+                background-color: #FFEAD0;
+                color: black;
+            }
+            to {
+                background-color: #115E59;
+                color: white;
             }
         }
         

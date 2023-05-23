@@ -1,6 +1,6 @@
 import React from "react";
 import "../server"
-import { Link } from "react-router-dom";
+import { Link, NavLink, useSearchParams } from "react-router-dom";
 
 
 
@@ -9,26 +9,29 @@ import { Link } from "react-router-dom";
 
 export default function Vans(){
     
+    const[vanFilter, setVanFilter] = useSearchParams()
+    const typeFilter = vanFilter.get("type")
+
+    
+
 
     const[vans ,setVans] = React.useState([])
 
 
     React.useEffect(() => {
-        fetch("https://tino-vanlife-project.netlify.app/api/vans")
+        fetch("/api/vans")
             .then(res => res.json())
             .then(data => setVans(data.vans))
     }, [])
 
 
+    const vanArray = typeFilter ? vans.filter( van => van.type.toLowerCase() === typeFilter)  : vans
 
-  
-
-    
 
 
    
 
-    const vansData = vans.map(van => {
+    const vansData = vanArray.map(van => {
         return (
             <Link to={`/vans/${van.id}`} id="vansdatadivlink">
                
@@ -60,10 +63,10 @@ export default function Vans(){
         <h1 id="vanspagehead">Explore our van options</h1>
 
         <div id="vanscategorydiv">
-            <button className="vanscategorybtn">Simple </button>
-            <button className="vanscategorybtn" >Luxury</button>
-            <button className="vanscategorybtn">Rugged </button>
-            <button  className="vanscategorybtn" id="clearfilterbtn">Clear filters </button>
+        <NavLink to="?type=simple" className = "vanscategorybtn" id="vanscategorybtn-simple"> Simple </NavLink>
+        <NavLink to="?type=luxury" className = "vanscategorybtn" id="vanscategorybtn-luxury"> Luxury </NavLink>
+        <NavLink to="?type=rugged" className = "vanscategorybtn" id="vanscategorybtn-rugged"> Rugged </NavLink> 
+        <NavLink to="/vans" className="vanscategorybtn" id="clearfilterbtn">Clear filters </NavLink>
         </div>
 
         

@@ -19,24 +19,24 @@ createServer({
         this.namespace = "api"
         this.logging = false
 
-        this.get("https://tino-vanlife-project.netlify.app/api/vans", (schema, request) => {
+        this.get("/vans", (schema, request) => {
             return schema.vans.all()
         })
 
-        this.get("https://tino-vanlife-project.netlify.app/api/vans/:id", (schema, request) => {
+        this.get("/vans/:id", (schema, request) => {
             const id = request.params.id
             return schema.vans.find(id)
         })
 
-        this.get("https://tino-vanlife-project.netlify.app/api/host/vans", (schema, request) => {
+        this.get("/host/vans", (schema, request) => {
             // Hard-code the hostId for now
             return schema.vans.where({ hostId: "123" })
         })
 
-        this.get("https://tino-vanlife-project.netlify.app/api/host/vans/:id", (schema, request) => {
+        this.get("/host/vans/:id", (schema, request) => {
             // Hard-code the hostId for now
             const id = request.params.id
-            return schema.vans.where({ id, hostId: "123" })
+            return schema.vans.findBy({ id, hostId: "123" })
         })
     }
 })
