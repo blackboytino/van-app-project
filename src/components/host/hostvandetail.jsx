@@ -49,23 +49,23 @@ to={`/host/vans/${currentVan.id}`}
 end
 className={({ isActive }) =>
   isActive ? "hostvandetailroutelink-active" : "hostvandetailroutelinks"
-}
->
+} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}
+> 
 Details
 </NavLink>
 <NavLink
-to={`/host/vans/${currentVan.id}/pricing`}
+to="pricing"
 className={({ isActive }) =>
   isActive ? "hostvandetailroutelink-active" : "hostvandetailroutelinks"
-}
+} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}
 >
 Pricing
 </NavLink>
 <NavLink
-to={`/host/vans/${currentVan.id}/photos`}
+to="photos"
 className={({ isActive }) =>
   isActive ? "hostvandetailroutelink-active" : "hostvandetailroutelinks"
-}
+} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}
 >
 Photos
 </NavLink>

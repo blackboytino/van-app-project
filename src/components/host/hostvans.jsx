@@ -32,7 +32,7 @@ export default function Hostvans(){
 
 <div id="editvanlist">
 <Link
-            to={`/host/vans/${van.id}`}
+            to={van.id}
             key={van.id}
             id="editvanlist"
             >

@@ -19,7 +19,7 @@ export default function VanDetail(){
     return(
         <>
         <div id="vandetailpage">
-            <p className="back-to-van-link"><i class="fa-solid fa-arrow-left"></i> <Link id="back-to-van-link" to="/vans">Back to all vans</Link> </p>
+            <p className="back-to-van-link"> <Link id="back-to-van-link" to="/vans"><i class="fa-solid fa-arrow-left"></i>Back to all vans</Link> </p>
 
 
 { van ?

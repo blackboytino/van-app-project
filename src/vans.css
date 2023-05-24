@@ -32,6 +32,17 @@
             text-align: center;
         }
         
+        .vanscategorybtn-clear {
+            width: 20%;
+            color: black;
+            border: none;
+            margin-right: 5%;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        
         #vanscategorybtn-simple:hover {
             animation-name: vans-darken-simple;
             animation-duration: 0.5s;
@@ -83,15 +94,26 @@
             }
         }
         
+        @keyframes clearfilter {
+            from {
+                background-color: none;
+                color: black;
+            }
+            to {
+                background-color: gray;
+                color: white;
+            }
+        }
+        
         #clearfilterbtn {
             width: 20%;
             border: none;
-            background: none;
-            animation: none;
         }
         
         #clearfilterbtn:hover {
-            text-decoration: underline;
+            animation-name: clearfilter;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
         }
         
         #vanslist {
@@ -104,7 +126,7 @@
             margin: auto;
             width: 80%;
             height: 600px;
-            margin-bottom: 16%;
+            margin-bottom: 17%;
             color: black;
         }
         

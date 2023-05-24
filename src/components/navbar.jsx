@@ -9,9 +9,9 @@ export default function Navbar(){
         <Link to="/" className="routelinks" id="homelink" >#VANLIFE</Link>
         
        <div id="link-right">
-       <NavLink to="/host" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} >Host</NavLink>
-        <NavLink to="/about" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} >About</NavLink>
-        <NavLink to="/vans" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"}>Vans</NavLink>
+       <NavLink to="/host" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>Host</NavLink>
+        <NavLink to="/about" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>About</NavLink>
+        <NavLink to="/vans" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>Vans</NavLink>
         </div>
         
         </nav>
