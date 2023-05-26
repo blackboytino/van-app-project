@@ -33,7 +33,7 @@ export default function Vans(){
 
     const vansData = vanArray.map(van => {
         return (
-            <Link to={van.id} id="vansdatadivlink">
+            <Link state={{search: vanFilter.toString()}}  to={van.id} id="vansdatadivlink">
                
             <div id="vansdatadiv">
                 <img src={van.imageUrl} alt="" id="vansimage"/>
