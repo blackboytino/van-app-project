@@ -30,6 +30,7 @@
             background-color: #FFEAD0;
             font-size: 18px;
             text-align: center;
+            cursor: pointer;
         }
         
         .vanscategorybtn-clear {
@@ -120,14 +121,15 @@
             column-count: 2;
             width: 90%;
             margin: auto;
+            cursor: auto;
         }
         
         #vansdatadiv {
             margin: auto;
             width: 80%;
-            height: 600px;
             margin-bottom: 17%;
             color: black;
+            cursor: pointer;
         }
         
         #vandata-nameprice {

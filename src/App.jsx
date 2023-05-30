@@ -19,6 +19,7 @@ import Pricing from "./components/host/pricing";
 import Photos from "./components/host/photos";
 import HostVanDetail from "./components/host/hostvandetail";
 import Hostvaninfo from "./components/host/hostvaninfo";
+import Error404 from "./Error404";
 
 
 
@@ -31,7 +32,7 @@ export default function App() {
 
 
 <Route path="/" element={<Layout />}>
-
+         
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="reviews" element={<Reviews/>} />
       </Route>
 
+      <Route path ="*" element={<Error404/>}/>
       </Route>
       
 </Routes>

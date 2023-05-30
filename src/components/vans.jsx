@@ -9,7 +9,7 @@ import { Link, useSearchParams } from "react-router-dom";
 
 export default function Vans(){
     
-    const[vanFilter, setVanFilter] = useSearchParams()
+    const[vanFilter, setVanFilter] = useSearchParams() 
     const typeFilter = vanFilter.get("type")
 
     
@@ -29,11 +29,11 @@ export default function Vans(){
 
 
 
-   
+
 
     const vansData = vanArray.map(van => {
         return (
-            <Link state={{search: vanFilter.toString()}}  to={van.id} id="vansdatadivlink">
+            <Link state={{search: `?${vanFilter.toString()}`, type : typeFilter}}  to={van.id} id="vansdatadivlink">
                
             <div id="vansdatadiv">
                 <img src={van.imageUrl} alt="" id="vansimage"/>
