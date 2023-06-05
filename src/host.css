@@ -345,3 +345,8 @@
     height: 100%;
     border-radius: 15px;
 }
+
+#loadh1 {
+    margin: 5%;
+    font-family: Arial;
+}

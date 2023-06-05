@@ -55,7 +55,12 @@ export default function Hostvans(){
  <div id="dashboardlistedvans">
     <h3>Your listed Vans  </h3>
    
-   {vansData}
+   {vanList.length > 0 ? vansData : 
+   
+   <>
+  
+   <h1 id="loadh1"> Loading...</h1>
+   </>}
    
    
 </div>
