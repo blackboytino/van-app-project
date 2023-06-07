@@ -20,6 +20,7 @@ import Photos from "./components/host/photos";
 import HostVanDetail from "./components/host/hostvandetail";
 import Hostvaninfo from "./components/host/hostvaninfo";
 import Error404 from "./Error404";
+import Error from "./components/error";
 
 
 
@@ -28,7 +29,7 @@ const vanRouter = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout />}>
   <Route index element={<Home />} />
   <Route path="about" element={<About />} />
-  <Route path="vans" element={<Vans />} />
+  <Route path="vans" element={<Vans />} loader={vansLoader}  errorElement={<Error/>}/>
   <Route path="vans/:id" element={<VanDetail />} />
 
 
