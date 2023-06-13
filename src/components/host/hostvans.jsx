@@ -7,7 +7,7 @@ export default function Hostvans(){
     const[vanList ,setVanList] = React.useState([])
 
     React.useEffect(() => {
-        fetch("tino-vanlife-project.netlify.app/api/host/vans")
+        fetch("/api/host/vans")
             .then(res => res.json())
             .then(data => setVanList(data.vans))
     }, [])
