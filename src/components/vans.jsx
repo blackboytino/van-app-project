@@ -3,18 +3,25 @@ import "../server"
 import { Link, useLoaderData, useSearchParams } from "react-router-dom";
 import { getVans } from "../api"
 
-export function loader() {
-    return getVans()
-}
 
+
+
+
+export function loader() {
+  return getVans();
+  
+  }
+  
 
 
 export default function Vans(){
     
+    
     const[vanFilter, setVanFilter] = useSearchParams()   
-    const [error, setError] = React.useState(null)
+    
 
-    const vans = useLoaderData()
+    const vans = useLoaderData() 
+   
 
 
  
@@ -29,7 +36,7 @@ export default function Vans(){
 
 
 
-    const vansData = vanArray.map(van => {
+    const vansData = vanArray.map((van, index) => {
         return (
             <Link state={{search: `?${vanFilter.toString()}`}}  to={van.id} id="vansdatadivlink">
                
@@ -67,9 +74,7 @@ export default function Vans(){
 
    
     
-    if (error) {
-        return <h1>There was an error: {error.message}</h1>
-    }
+   
 
 
    
