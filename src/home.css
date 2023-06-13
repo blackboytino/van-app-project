@@ -46,6 +46,10 @@
        float: right;
    }
    
+   #link-right i {
+       font-size: 25px;
+   }
+   
    .routelinks:hover {
        font-family: Arial, Helvetica, sans-serif;
    }

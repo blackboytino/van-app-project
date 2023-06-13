@@ -16,7 +16,7 @@ createServer({
     },
 
     routes() {
-        this.namespace = "api"
+        this.namespace = "tino-vanlife-project.netlify.app/api"
         this.logging = false
         this.timing = 1000
 

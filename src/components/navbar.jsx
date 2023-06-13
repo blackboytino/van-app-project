@@ -12,7 +12,7 @@ export default function Navbar(){
        <NavLink to="/host" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>Host</NavLink>
        <NavLink to="/about" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>About</NavLink>
        <NavLink to="/vans" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {textDecoration: "underline" } : null}>Vans</NavLink>
-       <NavLink to="/login" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {color: "#FF8C38" } : null}><i class="fa-solid fa-user "></i></NavLink>
+       <NavLink to="/login" className = {({isActive}) => isActive  ? "routelink-active" : "routelinks"} style={({isActive}) => isActive ? {color: "black" } : {color: "#FF8C38" }}><i class="fa-solid fa-circle-user"></i></NavLink>
         </div>
         
         </nav>
