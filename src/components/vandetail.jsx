@@ -1,14 +1,21 @@
 import React from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link,  useLocation, useLoaderData } from "react-router-dom";
+import { getVans } from "../api"
 
+
+
+export function loader({params}) {
+    return getVans(params.id)
+}
 
 
 
 export default function VanDetail(){
    
-    const params = useParams()
-    const [van, setVan] = React.useState(null)
+    //const params = useParams()
+    //const [van, setVan] = React.useState(null)
     const location = useLocation()
+    const van = useLoaderData()
    
 const search = location.state?.search || ""
 const type =  location.state?.type || "all"
@@ -17,11 +24,11 @@ const vanType = type.charAt(0).toUpperCase() + type.slice(1)
 
 
 
-    React.useEffect( () => {
+   /* React.useEffect( () => {
          fetch(`/api/vans/${params.id}`)
          .then(res => res.json())
          .then(data => setVan(data.vans))
-    },[params.id])
+    },[params.id])*/
 
 
     
@@ -31,7 +38,7 @@ const vanType = type.charAt(0).toUpperCase() + type.slice(1)
             <p className="back-to-van-link"> <Link id="back-to-van-link" to= {`../${search}`} relative="path"><i class="fa-solid fa-arrow-left"></i>Back to {vanType} vans</Link> </p>
 
 
-{ van ?
+
            <div id="vandetaildiv">
            <img id="vandetailimage" alt="" src={van.imageUrl}/>
            <div id= {van.type=== "Luxury" ? "vandetailluxury" :  van.type === "Simple" ? "vandetailsimple" : "vandetailrugged"}>{van.type}</div>
@@ -41,8 +48,8 @@ const vanType = type.charAt(0).toUpperCase() + type.slice(1)
            <div id="vandetailbuttondiv">
            <button type="submit" id="vandetailbutton">Rent this van </button></div>
            </div> 
-           : <h2> Loading...</h2>
-}
+           
+
             
 
 

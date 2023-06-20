@@ -112,10 +112,26 @@
     background-color: #FFF7ED;
 }
 
-#dashboardlistedvans h3 {
-    margin-left: 4%;
+#dashboardlistedvans2 {
+    font-size: 20px;
+    padding-top: 2%;
+    height: 290%;
+    width: 100%;
+    background-color: #FFF7ED;
+}
+
+#dashboardlistedvansh3 {
+    margin: auto;
+    margin-left: 5%;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+#dashboardlistedvans2 h3 {
+    margin-left: 5%;
+    font-weight: bold;
+    margin-bottom: 3%;
 }
 
 #dashboardlistedvans a {
@@ -128,17 +144,43 @@
 
 #vanlistdiv {
     background-color: white;
-    height: 8.4%;
+    height: 8.8%;
     width: 90%;
-    margin: auto;
     border-radius: 20px;
+    margin: auto;
     margin-bottom: 4%;
     display: flex;
 }
 
+#vanlistdiv2 {
+    background-color: white;
+    height: 8.8%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+}
+
+#hostvanslistdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+}
+
+#hostvanslinkdiv {
+    margin-bottom: 5%;
+    width: 90%;
+}
+
+#hostvanslistdiv a {
+    color: black;
+}
+
 #vanlistdivimg {
-    width: 8%;
-    height: 55%;
+    width: 9%;
+    height: 60%;
     margin: 3%;
 }
 
@@ -161,18 +203,13 @@
 #editvanlist {
     margin: auto;
     margin-right: 5%;
-    margin-top: 2%;
     text-align: right;
     height: 50%;
     width: 20%;
 }
 
 #editvanlist p:hover {
-    text-decoration: underline;
-}
-
-#hostvansdiv {
-    position: absolute;
+    font-weight: bold;
 }
 
 #reviewheader {

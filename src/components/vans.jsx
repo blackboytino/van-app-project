@@ -6,10 +6,8 @@ import { getVans } from "../api"
 
 
 
-
 export function loader() {
   return getVans();
-  
   }
   
 
@@ -54,7 +52,7 @@ export default function Vans(){
                 {van.type}
                 </div>
    
-        </div>
+        </div> 
      
         </Link>
 

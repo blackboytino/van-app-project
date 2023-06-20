@@ -1,27 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
+import { getHostVans } from "../../api";
+import { requireAuth } from "../../utils";
 
+export async function loader(){
+    await requireAuth()
+    return getHostVans()
+}
 
 export default function Hostvans(){
+   // const[vanList ,setVanList] = React.useState([])
 
-    const[vanList ,setVanList] = React.useState([])
+    const vanList = useLoaderData()
 
-    React.useEffect(() => {
+
+   /* React.useEffect(() => {
         fetch("/api/host/vans")
             .then(res => res.json())
             .then(data => setVanList(data.vans))
-    }, [])
+    }, [])*/
 
      const vansData = vanList.map(van => {  return (
             <>
-
-           <div id="vanlistdiv" key={van.id}>
+<Link
+            to={van.id}
+            key={van.id}
+            id="hostvanslinkdiv"
+            >
+           <div id="vanlistdiv2" key={van.id}>
 
           
                 
 
         <div id="vanlistdivimg">
-        <img src = {van.imageUrl} alt=""/>
+        <img src = {van.imageUrl} alt=""/> 
         </div>
 
 
@@ -31,20 +43,16 @@ export default function Hostvans(){
 </div>
 
 <div id="editvanlist">
-<Link
-            to={van.id}
-            key={van.id}
-            id="editvanlist"
-            >
-   <p>View</p>
-   </Link>
+
+   <p>Click to View</p>
+   
 
 
 </div>
 
 
            </div>
-          
+          </Link>
             </>
         )
     })
@@ -52,16 +60,14 @@ export default function Hostvans(){
 
     return(
     <>
- <div id="dashboardlistedvans">
-    <h3>Your listed Vans  </h3>
+ 
+ <div id="dashboardlistedvans2">
+ <h3>Your listed Vans  </h3>
+
+    <div id="hostvanslistdiv">
    
-   {vanList.length > 0 ? vansData : 
-   
-   <>
-  
-   <h1 id="loadh1"> Loading...</h1>
-   </>}
-   
+   {vansData}
+   </div>
    
 </div>
     </>

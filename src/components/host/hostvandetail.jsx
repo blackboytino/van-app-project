@@ -1,28 +1,24 @@
 import React from "react"
-import {   Link, NavLink, Outlet, useParams } from "react-router-dom"
+import {   Link, NavLink, Outlet, useLoaderData } from "react-router-dom"
+import { getHostVans } from "../../api"
+import { requireAuth } from "../../utils";
 
-
+export async function loader({params}){
+  await requireAuth()
+return getHostVans(params.id)
+}
 
 
 
 export default function HostVanDetail() {
-    const params = useParams()
-    const [currentVan, setCurrentVan] = React.useState(null)
-
-    React.useEffect( () => {
-         fetch(`/api/vans/${params.id}`)
-         .then(res => res.json())
-         .then(data => setCurrentVan(data.vans))
-    },[params.id])
-
-    
+   
+    const currentVan = useLoaderData()
+  
     return (
     <>
 <div id="hostvandetailpage">
-
+ 
     <p className="host-back-to-van-link"><i class="fa-solid fa-arrow-left" id="host-back-to-van-link"></i> <Link id="host-back-to-van-link2"  to=".." relative="path">Back to all vans</Link> </p>
-
-    { currentVan ?
 
            <div id="hostvandetaildiv">
 
@@ -38,9 +34,7 @@ export default function HostVanDetail() {
            </div>
 
            </div>
-
-
-           
+         
            <div id="hostvandetails-link-right">
 
 
@@ -74,8 +68,7 @@ Photos
 <Outlet context={ {currentVan} }/>
        
 </div>
-  : <h2> Loading...</h2>
-}
+
 </div>
             
 </>
